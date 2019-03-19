@@ -1,0 +1,12 @@
+{
+  "name": "ost/order-status",
+  "license": "proprietary",
+  "type": "shopware-plugin",
+  "extra": {
+    "installer-name": "OstOrderStatus"
+  },
+  "scripts": {
+    "test": "phpunit -c tests/ --colors=always",
+    "test-unit": "phpunit -c tests/phpunit_unit.xml --colors=always"
+  }
+}

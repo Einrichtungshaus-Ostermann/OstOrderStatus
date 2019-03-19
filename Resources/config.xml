@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+        <element type="button">
+            <name>defaultButton</name>
+            <label><![CDATA[<b>Allgemeine Einstellungen</b>]]></label>
+        </element>
+
+        <element type="text">
+            <name>csvFilename</name>
+            <label>Dateiname</label>
+            <value>state.csv</value>
+            <description><![CDATA[Der Name der .csv Datei.<br /><br /><b>Format:</b><br />Bestellnummer|Status<br /><br /><b>Beispiel:</b><br />state.csv]]></description>
+        </element>
+
+        <element type="text">
+            <name>csvDirectory</name>
+            <label>Verzeichnis</label>
+            <value>sync/import/orderstate</value>
+            <description><![CDATA[Das Verzeichniss der .csv Datei.<br /><br /><b>Beispiel:</b><br />/var/www/sync/import<br />sync/import]]></description>
+        </element>
+
+        <element type="textarea">
+            <name>mapping</name>
+            <label>Zuordnung Status</label>
+            <value><![CDATA[0:0
+1:1
+2:2
+3:3
+4:4
+5:5
+6:6
+7:7]]></value>
+            <description><![CDATA[Das Mapping aus dem .csv Export zum Status innerhalb von Shopware. Die ID aus der Warenwirtschaft mit der ID aus Shopware - getrennt mit einem Doppelpunkt Eine Zuordnung pro Zeile.<br /><br /><b>Beispiel:</b><br />1:1<br />303:2<br />712:5]]></description>
+        </element>
+
+
+    </elements>
+</config>
